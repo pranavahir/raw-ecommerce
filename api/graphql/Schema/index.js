@@ -8,7 +8,8 @@ module.exports = gql`
 
     }
     type Query{
-        getUser(username:String):User
+        getUser(username:String,dob:String):User
+        getData(namee:String):[User]
     }
     
 `
